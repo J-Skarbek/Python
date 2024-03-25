@@ -1,10 +1,13 @@
-print('Variables & Datatypes - Exercise')
+print('Basic Arithmetic')
 
-item_name = 'widget'
-item_price = 23.5
 
-in_stock = 100
-
-print(item_name, item_price, in_stock)
-
+a=10
+b=3
+print('Addition : ', a + b)
+print('Subtraction : ', a - b)
+print('Multiplication : ', a * b)
+print('Division (float) : ', a / b)
+print('Division (floor) : ', a // b)
+print('Modulus : ', a % b)
+print('Exponent : ', a ** b)
 
