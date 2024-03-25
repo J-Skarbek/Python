@@ -1,8 +1,10 @@
-print('Hello world')
-print(45)
+print('Variables & Datatypes - Exercise')
 
-test_variable="6"
-abas="another variable"
+item_name = 'widget'
+item_price = 23.5
 
-print('This string displays the 1st test variable: ' + test_variable + '....')
-print('here\'s a second one' + abas)
+in_stock = 100
+
+print(item_name, item_price, in_stock)
+
+
