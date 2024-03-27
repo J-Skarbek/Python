@@ -41,6 +41,12 @@ print('Python' not in msg) #will check for the string to not exist within the ms
 name='TERRY'
 color = 'RED'
 example1 = '[' + name + '] loves the color ' + color + '!'
-example2 = f'[{name}] loves the color {color.lower()}!'
+example2 = f'[{name}] loves the color {color.lower()}!' #works like backticks in JS -- apparently needs an 'f' at beginning to work
 print(example1)
 print(example2)
+
+name = input('What is your name?')
+print('My name is ' + name)
+
+age = input('What is your age?')
+print('I am ' + age + ' years old.')
