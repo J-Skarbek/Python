@@ -66,7 +66,33 @@ murray_family[2] = 'Jorge' ## inserting will change a list at the specific posti
 # print(test_var)
 
 new_murry_family = murray_family[:] # this will copy the the list into a new list
+new_murry_family_2 = murray_family.copy() # works the same as above
+new_murry_family_3 = list(murray_family) # works the same as the prior 2 methods
 
 print(new_murry_family)
+
+
+## Lemonade Example ##
+
+print (' ***** Lemonade Exercise *******')
+
+sales_w1 = [7,3,42,19,15,35,9]
+sales_w2 = [12,4,26,10,7,28]
+sales = []
+last_day = input('What were the last day\'s sales?')
+
+sales_w2.append(int(last_day))
+
+sales.extend(sales_w1)
+sales.extend(sales_w2)
+
+print(sales)
+best_day = max(sales)
+worst_day = min(sales)
+best_worst_combined = best_day + worst_day
+
+print(f'The best sales day had a total sales of ${str(best_day)}')
+print(f'The worst sales day had a total sales of ${str(worst_day)}')
+print(f'Cominbed, the best and worst days\' sales had a total value of ${str(best_worst_combined)}')
 
 
