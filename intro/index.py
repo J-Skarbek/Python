@@ -83,12 +83,15 @@ last_day = input('What were the last day\'s sales?')
 
 sales_w2.append(int(last_day))
 
-sales.extend(sales_w1)
-sales.extend(sales_w2)
+# sales.extend(sales_w1)
+# sales.extend(sales_w2)
+
+# can also comine sales like this:
+sales = sales_w1 + sales_w2
 
 print(sales)
-best_day = max(sales)
-worst_day = min(sales)
+best_day = max(sales) * 1.5
+worst_day = min(sales) * 1.5
 best_worst_combined = best_day + worst_day
 
 print(f'The best sales day had a total sales of ${str(best_day)}')
